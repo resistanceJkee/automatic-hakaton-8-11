@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Main</title>
+    <link rel="stylesheet" href="styles/style.css" type="text/css">
+    <link rel="stylesheet" href="styles/clutterboard-theme.css">
+    <link rel="stylesheet" href="styles/style.css" type="text/css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="loading">
+        <h1 class = "zxc">Подбор решений...</h1>
+        <div class="cssload-thecube">
+            <div class="cssload-cube cssload-c1"></div>
+            <div class="cssload-cube cssload-c2"></div>
+            <div class="cssload-cube cssload-c4"></div>
+            <div class="cssload-cube cssload-c3"></div>
+        </div>
+    </div>
+    <div class="finder results">
+        <div class="main_form">
+            <h1>Ваш результат</h1>
+            <div class = "res">
+                
+            </div>
+            <div class="avia"></div>
+            <a href="inf.pdf" download="" title="загрузить результат поиска">скачать результат</a>
+            <div class="tomenu" onclick="re()"></div>
+        </div>
+    </div>
+    <section class="finder">
+        <form class="main_form" method="POST">
+            <h1>Подобрать решение</h1>
+            <div class="label label_from" >откуда</div>
+            <input type="text" placeholder="Введите город отправления" class="l_from">
+            <div class="label label_to">куда</div>
+            <input type="text" placeholder="Введите город прибывания" class="l_to">
+            <div class="label label_date_from">Дата отправления</div>
+            <div id="demo1"></div>
+            <div class="label label_date_to">Дата прибывания</div>
+            <div id="demo2"></div>
+        </form>
+        <button type="button" class = "submit">ПОДОБРАТЬ</button>
+    </section>
+    <div class="bg"></div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="scripts/jquery-1.12.4.min.js"></script>
+    <script src="scripts/jquery.autocomplete.js"></script>
+    <script src="scripts/mtr-datepicker.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
