@@ -107,7 +107,7 @@ datepickerDefault = new MtrDatepicker({
 
 $('#demo1').on('click', function() {
   itWasClicked1 = 1;
-  mm2 = (parseInt($('.months').val())+1) > 12 ? 12 : parseInt($('.months').val())+1;
+  mm = (parseInt($('.months').val())+1) > 12 ? 12 : parseInt($('.months').val())+1;
   dd = parseInt($('.dates').val());
   yyyy = parseInt($('.years').val());
   date = `${yyyy}-${mm}-${dd}`;//переменная для тебя для отправки в стринговом формате
@@ -127,13 +127,14 @@ $('#demo2').on('click', function() {
 
 /**Сравнение дат*/
 function comporator(date1, date2){
-    let dater1 = date1[0]*100+100*date1[1]+date1[2];
-    let dater2 = date2[0]*100+100*date2[1]+date2[2];
-    if (dater2 > dater1 || date2[0] > date1[0]){
-        return true;
-    } else{
-        return false;
-    }
+  let dater1 = date1[0]*100000000+10000*date1[1]+date1[2]*10;
+  let dater2 = date2[0]*100000000+10000*date2[1]+date2[2]*10;
+  console.log(dater1, dater2, date1[1]);
+  if (dater2 >= dater1 || date2[0] > date1[0]){
+      return true;
+  } else{
+      return false;
+  }
 }
 
 /**Отправка значений с инпутов*/

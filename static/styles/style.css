@@ -78,7 +78,8 @@ body{
     border-radius: 0.5em;
     margin-top: 4rem;
     padding: 28px;
-    width: 720px;
+	width: 37%;
+	
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -89,8 +90,9 @@ body{
 input{
     box-shadow: 1px 1px 0px rgb(0, 204, 255);
     font-family: GSans; 
-    width: 530px;
-    font-size: 36px;
+    width: 90%;
+	font-size: 2em;
+	text-align: center;
     height: 50px;
     border: none; outline: none;
     border-radius: 6px;
@@ -374,9 +376,8 @@ a:hover{
 		opacity: 0;
 	}
 }
-
 .tomenu{
-    background-image: url(../assets/arr.png);
+    background-image: url(../assets/);
     background-size: cover;
     background-repeat: no-repeat;
     width: 50px;
@@ -401,4 +402,15 @@ a:hover{
     100%{
         transform: rotate(-360deg);
     }
+}
+
+@media screen and (max-width: 1800px){
+	html {  
+		font-size: 14px;
+	}
+}
+@media screen and (max-width: 1600px){
+	html {  
+		font-size: 12px;
+	}
 }
